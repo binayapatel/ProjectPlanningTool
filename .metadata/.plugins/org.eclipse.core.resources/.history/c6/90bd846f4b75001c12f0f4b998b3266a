@@ -1,0 +1,7 @@
+package com.pm.repositories;
+
+import com.pm.domain.Project;
+
+public interface ProjectRepository extends CurdRepository<Project, Long>{
+
+}

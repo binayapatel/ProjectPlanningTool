@@ -1,0 +1,5 @@
+package com.pm.repositories;
+
+public class ProjectRepository {
+
+}

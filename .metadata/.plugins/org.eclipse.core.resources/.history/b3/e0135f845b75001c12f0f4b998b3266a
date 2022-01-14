@@ -1,0 +1,15 @@
+package com.pm.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+@ControllerAdvice
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class ProjectIdException extends ResponseEntityExceptionHandler {
+
+	public ProjectIdException(String message) {
+		super(message);
+	}
+}
